@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html data-minimalscrollbar="yes">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>About</title>
+	<link rel="stylesheet" href="./style.css" media="screen" type="text/css">
+	<link rel="stylesheet" type="text/css" href="/lib/font-awesome.min.css">
+</head>
+
+<style>
+	html {
+		overflow: -moz-hidden-unscrollable;
+		-ms-overflow-style: none;
+		height: 100%;
+	}
+
+	body::-webkit-scrollbar {
+		display: none;
+	}
+
+	body {
+		-ms-overflow-style: none;
+		height: 100%;
+		width: calc(100vw + 18px);
+		overflow: auto;
+	}
+</style>
+
+<body class="body--ready">
+	<a href=".." title="Back"><i class="fa fa-level-up fa-fw"></i>Back</a>
+	<canvas class="canvas" width="90%" height="90%"></canvas>
+	<div class="help">?</div>
+	<div class="ui"> <input class="ui-input" type="text"> <span class="ui-return">↵</span></div>
+	<div class="overlay">
+		<div class="tabs">
+			<div class="tabs-labels">
+				<span class="tabs-label">About</span>
+				<span class="tabs-label">Info</span>
+				<span class="tabs-label">Command</span>
+			</div>
+			<div class="tabs-panels">
+				<div class="tabs-panel ui-introduction">
+					<div class="ui-content">
+						<h2>About Me</h2>
+						<p>I am UserUnknown!</p>
+						<p>You can call me as "Konnyaku"</p>
+						<br>
+					</div>
+				</div>
+				<div class="tabs-panel ui-introduction">
+					<div class="ui-content">
+						<h2>Special Thanks</h2>
+						<p>Page redesigned from project <a
+								href="http://www.kennethcachia.com/shape-shifter/">Shape-Shifter</a> by <a
+								href="http://www.kennethcachia.com/">Kenneth Cachia</a>.</p>
+					</div>
+				</div>
+				<div class="tabs-panel ui-introduction">
+					<div class="ui-content">
+						<h2>Command</h2>
+						<p>Try these:</p>
+						<span style="font-family: Consolas">
+							<a href="./?a=Hello :)"><i class="fa fa-play" aria-hidden="true"></i>
+								<b>TEXT</b></a>: <span style="color: gray;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type anything</span><br>
+							<a href="./?a=#countdown 3"><i class="fa fa-play" aria-hidden="true"></i>
+								<b>COUNTDOWN</b></a>: <span style="color: gray;">&nbsp;&nbsp;#countdown <i>number</i></span><br>
+							<a href="./?a=#time"><i class="fa fa-play" aria-hidden="true"></i>
+								<b>TIME</b></a>: <span style="color: gray;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#time</span><br>
+							<a href="./?a=#rectangle 30x15"><i class="fa fa-play" aria-hidden="true"></i>
+								<b>RECTANGLE</b></a>: <span style="color: gray;">&nbsp;&nbsp;#rectangle <i>width x height</i></span><br>
+							<a href="./?a=#circle 25"><i class="fa fa-play" aria-hidden="true"></i>
+								<b>CIRCLE</b></a>: <span style="color: gray;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#circle <i>diameter</i></span><br>
+							<a href="./?a=Hi|#time|#circle 20"><i class="fa fa-play" aria-hidden="true"></i>
+								<b>ANIMATE</b></a>: <span style="color: gray;">&nbsp;&nbsp;&nbsp;&nbsp;<i>command1</i>|<i>command2</i></p></span><br>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./index.js"></script>
+</body>
+
+</html>
